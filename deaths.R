@@ -11,9 +11,9 @@ library(purrr)
 library(forecast)
 
 # 2) Import data (adjust paths as needed)
-pop <- read_excel("~/Desktop/popdata.xlsx")
-is  <- read_excel("~/Desktop/isdata.xlsx")
-cvd <- read_excel("~/Desktop/cvddata.xlsx")
+pop <- read_excel("~/data/popdata.xlsx")
+is  <- read_excel("~/data/isdata.xlsx")
+cvd <- read_excel("~/data/cvddata.xlsx")
 
 # 3) Compute totals (male + female)
 pop <- pop  %>% mutate(total_alive = m_alive + w_alive)
